@@ -1,0 +1,15 @@
+header {
+  text-align: center;
+}
+
+nav a {
+  color: red;
+}
+
+main p {
+  font-size: 18px;
+}
+
+.newsNavLink {
+  color: #00aced
+}
