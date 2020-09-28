@@ -3,7 +3,7 @@ let number;
 let accumulator = 0;
 outer: for (let i = 0; i < 1000; i++) {
   accumulator += i;
-  if (i >= 400)  break outer;
+  if (accumulator > 400)  break outer;
 }
 alert(`Current value: ${accumulator}`)
 
