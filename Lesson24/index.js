@@ -64,9 +64,36 @@ while (number <= 100) {
   number++;
 }
 
-//Print triangle
-let line = '*';
-for (let i = 0; i < 13; i++) {
-  console.log(line);
-  line = line + '*';
+//Print triangle - For loop
+for (let lineNumber = 0; lineNumber < 13; lineNumber++) {
+  let stars = '*';
+  for (let starCount = 0; starCount < lineNumber; starCount++) {
+    stars = stars + '*';
+  }
+  console.log(`For loop ${stars}`);
 }
+
+//Print triangle - Do while loop
+let lineNumber = 0;
+do  {
+  let stars = '*';
+  for (let starCount = 0; starCount < lineNumber; starCount++) {
+    stars = stars + '*';
+  }
+  console.log(`Do while loop ${stars}`);
+  lineNumber++
+} while (lineNumber < 13)
+
+
+//Print triangle - While loop
+lineNumber = 0;
+while (lineNumber < 13){
+  let stars = '*';
+  for (let starCount = 0; starCount < lineNumber; starCount++) {
+    stars = stars + '*';
+  }
+  console.log(`While loop ${stars}`);
+  lineNumber++;
+}
+
+
