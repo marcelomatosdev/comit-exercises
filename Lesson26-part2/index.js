@@ -6,7 +6,7 @@
 // Call this function 5 times
 let evenNumbers = function() {
   for (let number = 0; number <= 100; number++) {
-    number % 2 == 0 ? console.log(number) : '';
+    if (number % 2 == 0) { console.log(number); }
   }
 }
 
